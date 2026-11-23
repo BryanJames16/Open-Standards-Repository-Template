@@ -34,7 +34,7 @@ Before accepting contributions, complete the following:
 3. **Choose the specification license.** Complete [SPECIFICATION-LICENSE.md](SPECIFICATION-LICENSE.md) to state the terms for the standards text.
 4. **Check security reporting.** Make sure [SECURITY.md](SECURITY.md) provides a private reporting route that someone monitors. Enable GitHub private vulnerability reporting when available.
 
-Then contributors can follow [CONTRIBUTING.md](CONTRIBUTING.md) to submit proposals and changes. Additional (and optional) reminders can be found on [getting-started.md](docs/getting-started.md)
+Then contributors can follow [CONTRIBUTING.md](CONTRIBUTING.md) to submit proposals and changes. Additional (and optional) reminders can be found on [getting-started.md](docs/getting-started.md).
 
 ## Repository Setup
 
