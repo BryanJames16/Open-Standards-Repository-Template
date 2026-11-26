@@ -1,0 +1,26 @@
+# Shared formatting defaults for the standards repository.
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Markdown: use consistent indentation and a readable preferred line width.
+# Separate headings, paragraphs, lists, tables, and fenced blocks with blank lines.
+# Use blank lines for paragraph separation rather than trailing-space hard breaks.
+# EditorConfig cannot enforce Markdown block spacing; a later validation milestone can.
+[*.{md,markdown}]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# YAML and JSON configuration files use two-space indentation.
+[*.{yml,yaml,json,jsonc}]
+indent_style = space
+indent_size = 2
+
+# Make recipes require tabs.
+[Makefile]
+indent_style = tab
