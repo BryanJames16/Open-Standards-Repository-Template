@@ -7,6 +7,8 @@ on:
   push:
     branches:
       - main
+    tags:
+      - '**'
 
 permissions:
   contents: read
@@ -29,7 +31,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Check changed files
+      - name: Check whitespace and commits
         env:
           BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
           HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
