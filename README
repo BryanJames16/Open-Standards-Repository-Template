@@ -59,3 +59,15 @@ You do not need to customize every file before getting started.
 | **Optional** | Sections marked **(Optional)** and additional GitHub features | Keep only what the project needs. You can add features such as `CODEOWNERS`, GitHub Discussions, or publication automation later. |
 
 The `LICENSE` file covers the template material as stated in that file. Do not assume it defines the license or patent policy for every standard or implementation produced by this project.
+
+---
+
+## Guides
+
+- [Getting Started](docs/getting-started.md) — adoption and initial setup
+- [Governance](GOVERNANCE.md) — authority, decisions, and approval
+- [Contributing](CONTRIBUTING.md) — contribution workflow
+- [Standards Lifecycle](docs/governance/standards-lifecycle.md) — stages from proposal to publication
+- [Versioning and Releases](docs/governance/versioning-and-releases.md) — version numbers, tags, and release records
+- [GitHub Setup](docs/administration/github-setup.md) — repository settings
+- [Security Hardening](docs/administration/security-hardening.md) — recommended security controls
