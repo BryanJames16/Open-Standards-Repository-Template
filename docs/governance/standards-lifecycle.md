@@ -36,3 +36,11 @@ Keep the Markdown source in the repository. When a specification is approved and
 When a specification changes, publish a new version or revision according to the project's versioning approach. Mark earlier versions as superseded when appropriate, and retain them for reference unless there is a clear reason not to.
 
 A project may periodically review whether its specifications remain relevant. Keep this lightweight; define a review schedule only if the subject area or governance requires one.
+
+## Related Documents
+
+- `GOVERNANCE.md` — authority, decision-making, and approval
+- `docs/governance/versioning-and-releases.md` — version and release policy
+- `docs/templates/proposal-template.md` — proposal template
+- `docs/templates/specification-template.md` — specification template
+
