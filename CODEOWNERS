@@ -1,0 +1,21 @@
+# CODEOWNERS
+# Add usernames (@user) or teams (@org/team) to the patterns below.
+# Each listed owner must have write access to this repository.
+# Code owners are requested to review matching changes; this does not grant
+# standards approval authority. Formal approval is defined in GOVERNANCE.md.
+
+# Owners
+# Set default owners for the repository.
+# * @your-organization/maintainers
+
+
+# Maintainers
+# Assign maintainers to governance and repository administration files.
+# /GOVERNANCE.md @your-organization/maintainers
+# /.github/ @your-organization/maintainers
+
+
+# Contributors and subject-matter reviewers
+# Assign relevant teams to the standards or documentation they maintain.
+# /docs/ @your-organization/standards-reviewers
+
