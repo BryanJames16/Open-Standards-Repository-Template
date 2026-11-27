@@ -39,6 +39,7 @@ jobs:
         run: make check
 
   # Lint Markdown Files
+  # Make sure to add a repository variable named `MARKDOWN_LINT_TARGET` to specify the target directory for linting (normally on docs/specifications). If not set, it defaults to `docs`.
   markdownlint:
     name: Markdown lint
     runs-on: ubuntu-latest
