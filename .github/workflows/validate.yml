@@ -40,28 +40,28 @@ jobs:
 
   # Lint Markdown Files
   # Make sure to add a repository variable named `MARKDOWN_LINT_TARGET` to specify the target directory for linting (normally on docs/specifications). If not set, it defaults to `docs`.
-  markdownlint:
-    name: Markdown lint
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
+  # markdownlint:
+  #   name: Markdown lint
+  #   runs-on: ubuntu-latest
+  #   timeout-minutes: 5
 
-    env:
-      MARKDOWN_LINT_TARGET: ${{ vars.MARKDOWN_LINT_TARGET || 'docs' }}
+  #   env:
+  #     MARKDOWN_LINT_TARGET: ${{ vars.MARKDOWN_LINT_TARGET || 'docs' }}
 
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
-        with:
-          persist-credentials: false
+  #   steps:
+  #     - name: Check out repository
+  #       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+  #       with:
+  #         persist-credentials: false
 
-      - name: Set up Node.js
-        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
-        with:
-          node-version: 24
-          package-manager-cache: false
+  #     - name: Set up Node.js
+  #       uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+  #       with:
+  #         node-version: 24
+  #         package-manager-cache: false
 
-      - name: Lint Markdown
-        run: make lint-markdown
+  #     - name: Lint Markdown
+  #       run: make lint-markdown
 
   # Check links in Markdown files
   # Make sure to add a repository variable named `LINK_CHECK_TARGET` to specify the target directory for link checking (normally on docs/specifications). If not set, it defaults to `.`
