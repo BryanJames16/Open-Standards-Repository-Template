@@ -18,7 +18,7 @@ LYCHEE_CONFIG ?= lychee.toml
 
 # CODEOWNERS validation
 CODEOWNERS_VALIDATOR ?= codeowners-validator
-CODEOWNERS_FILE ?= .github/CODEOWNERS
+CODEOWNERS_FILE ?= ./CODEOWNERS
 CODEOWNERS_CHECKS ?= files,duppatterns,syntax
 
 export MARKDOWN_LINT_TARGET
