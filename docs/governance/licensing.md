@@ -4,7 +4,7 @@ This guide concerns the **copyright license for the text of your standards and s
 
 ## Keep the Licenses Separate
 
-- The repository's root [`LICENSE`](../../LICENSE) applies to the template material within the scope stated by that license.
+- The repository's root [`LICENSE`](../../LICENSE.md) applies to the template material within the scope stated by that license.
 - [`SPECIFICATION-LICENSE.md`](../../SPECIFICATION-LICENSE.md) states the license chosen by your project for its standards text.
 
 Make the scope of each license clear so contributors and readers know which terms apply to which material.

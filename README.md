@@ -42,7 +42,7 @@ Use `main` as the default branch. Protect it from direct changes and use pull re
 
 ## License
 
-The repository's [`LICENSE`](LICENSE) file applies to the reusable template material it covers. The terms for this project's standards text are stated separately in [SPECIFICATION-LICENSE.md](SPECIFICATION-LICENSE.md). Make sure the scope of each license is clear.
+The repository's [`LICENSE`](LICENSE.md) file applies to the reusable template material it covers. The terms for this project's standards text are stated separately in [SPECIFICATION-LICENSE.md](SPECIFICATION-LICENSE.md). Make sure the scope of each license is clear.
 
 ---
 
