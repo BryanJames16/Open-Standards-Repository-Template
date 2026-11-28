@@ -1,0 +1,17 @@
+# Lychee configuration for repository documentation links.
+# The Makefile supplies the directory or file to scan.
+
+verbose = "info"
+no_progress = true
+
+# Keep link checks predictable and avoid aggressive requests to hosts.
+max_concurrency = 8
+max_retries = 2
+timeout = 20
+max_redirects = 10
+
+# Check Markdown files only.
+extensions = ["md", "markdown"]
+
+# Check heading anchors as well as destination URLs.
+include_fragments = "anchor-only"
