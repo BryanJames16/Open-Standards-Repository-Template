@@ -1,4 +1,4 @@
-.PHONY: help check lint-markdown
+.PHONY: help check lint-markdown check-links
 
 .DEFAULT_GOAL := help
 
@@ -41,3 +41,7 @@ lint-markdown: ## Lint Markdown files in a directory or a specific file
 		exit 2; \
 	fi; \
 	npm exec --yes --package=markdownlint-cli2@$(MARKDOWNLINT_CLI2_VERSION) -- markdownlint-cli2 "$$target"
+
+check-links: ## Check links in Markdown files
+	@command -v "$(LYCHEE)" >/dev/null 2>&1 || { echo "lychee not found; install Lychee before running this target" >&2; exit 127; }
+	@$(LYCHEE) --config "$(LYCHEE_CONFIG)" "$(LINK_CHECK_TARGET)"
