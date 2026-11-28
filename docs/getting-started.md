@@ -26,7 +26,7 @@ Keep the default guidance where it fits. Remove optional sections that do not ap
 
 Complete [`SPECIFICATION-LICENSE.md`](../SPECIFICATION-LICENSE.md) to state the copyright license for your specifications. See the [licensing guide](governance/licensing.md) for a simple explanation and a suggested starting point.
 
-The template's [`LICENSE`](../LICENSE) and the license for your standards text have different purposes. Make their scopes clear.
+The template's [`LICENSE`](../LICENSE.md) and the license for your standards text have different purposes. Make their scopes clear.
 
 ## 5. Check Reporting and Repository Settings
 

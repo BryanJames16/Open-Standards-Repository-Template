@@ -1,0 +1,25 @@
+{
+  "config": {
+    "default": true,
+
+    // Align with the 100-character preference in .editorconfig.
+    "MD013": {
+      "line_length": 100,
+      "heading_line_length": 100,
+      "code_block_line_length": 100,
+      "tables": false
+    },
+
+    // Allow repeated headings in different specification sections.
+    "MD024": {
+      "siblings_only": true
+    },
+
+    // Consistent visual spacing.
+    "MD012": true,
+    "MD022": true,
+    "MD031": true,
+    "MD032": true
+  },
+  "gitignore": true
+}
