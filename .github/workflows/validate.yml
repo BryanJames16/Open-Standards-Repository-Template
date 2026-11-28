@@ -62,3 +62,57 @@ jobs:
 
       - name: Lint Markdown
         run: make lint-markdown
+
+  # Check links in Markdown files
+  # Make sure to add a repository variable named `LINK_CHECK_TARGET` to specify the target directory for link checking (normally on docs/specifications). If not set, it defaults to `.`
+  link-check:
+    name: Link validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Install Lychee
+        uses: taiki-e/install-action@073e1fd0bc889c9aee68dbaaa927cde1b5653a83
+        with:
+          tool: lychee@0.24.2
+          fallback: cargo-binstall
+
+      - name: Check Markdown links
+        env:
+          LINK_CHECK_TARGET: .
+          GITHUB_TOKEN: ${{ github.token }}
+        run: make check-links
+
+  # Validate CODEOWNERS file
+  # Make sure to add a repository variable named `CODEOWNERS_FILE` to specify the path to the CODEOWNERS file (normally on .github/CODEOWNERS). If not set, it defaults to `.github/CODEOWNERS`.
+  codeowners:
+    name: CODEOWNERS validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Go
+        uses: actions/setup-go@d8cbb8045d7f43706b9177cceb36c1f91a6644d5
+        with:
+          go-version: '1.27.4'
+          cache: false
+
+      - name: Install CODEOWNERS validator
+        run: |
+          go install github.com/mszostok/codeowners-validator@v0.7.4
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Validate CODEOWNERS
+        run: make check-codeowners
